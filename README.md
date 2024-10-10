@@ -42,26 +42,26 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/ваш-логин/ваш-репозиторий.git
+   git clone https://github.com/nurillo26/react_weather
 
    ```
 
 2. Перейдите в папку проекта:
 
-```bash
-cd ваш-репозиторий
-```
+   ```bash
+   cd ваш-репозиторий
+   ```
 
 3. Установите зависимости::
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 4. Запустите приложение:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 После этого приложение будет доступно по адресу http://localhost:5173
