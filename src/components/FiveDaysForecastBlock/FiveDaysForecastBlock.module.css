@@ -1,0 +1,48 @@
+@import '../../styles/variables.css';
+
+.days_forecast_wrap {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  background-color: var(--card-backgroud);
+  border-radius: var(--border-radius-small);
+}
+
+.card_title {
+  font-size: var(--font-size-18px);
+  font-weight: bold;
+}
+
+.card_items_block {
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  gap: 5px;
+}
+
+.card_item {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--card-item-background);
+  border-radius: var(--border-radius-small);
+}
+
+.card_item_title {
+  font-size: 14px;
+}
+
+.card_item img {
+  width: 100%;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+.card_item_temp {
+  font-size: var(--font-size-18px);
+  font-weight: bold;
+}

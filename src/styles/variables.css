@@ -1,0 +1,38 @@
+:root {
+  --border-radius-large: 24px;
+  --border-radius-small: 16px;
+
+  --box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --active-theme-switch: rgb(255, 238, 0);
+
+  /* Размер шрифта */
+  --font-size-14px: 14px;
+  --font-size-16px: 16px;
+  --font-size-18px: 18px;
+  --font-size-24px: 24px;
+
+  /* Задний фон */
+  --backgroung: #f1f1f1;
+
+  /* Карточка с информацией */
+  --card-backgroud: #cfcfcf;
+  --card-text-color: #333;
+
+  /* Блоки в карточке с информацией */
+  --card-item-background: #adadad;
+}
+
+.dark-theme {
+  --box-shadow: rgba(178, 201, 211, 0.12) 0px 2px 4px 0px, rgba(82, 171, 209, 0.32) 0px 2px 16px 0px;
+  --active-theme-switch: rgb(0, 162, 255);
+
+  /* Задний фон */
+  --backgroung: #000000;
+
+  /* Карточка с информацией */
+  --card-backgroud: #1e1e1e;
+  --card-text-color: #e6e6e6;
+
+  /* Блоки в карточке с информацией */
+  --card-item-background: #2b2b2b;
+}

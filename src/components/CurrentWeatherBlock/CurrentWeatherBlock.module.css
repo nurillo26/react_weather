@@ -1,0 +1,79 @@
+@import '../../styles/variables.css';
+
+.current_weather_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  border-radius: var(--border-radius-small);
+  background-color: var(--card-backgroud);
+  padding: 10px;
+}
+
+.weather_place {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  padding: 5px;
+  border-radius: 8px;
+  align-self: start;
+  font-size: var(--font-size-18px);
+  background-color: rgba(145, 145, 145, 0.2);
+}
+
+.geo_icon {
+  fill: var(--card-text-color);
+}
+
+.weather_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  height: 100%;
+}
+
+.current_date {
+  display: flex;
+  font-size: var(--font-size-24px);
+
+  justify-content: center;
+}
+
+.weather_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather_icon img {
+  width: 150px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+.weather_temp_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.temp {
+  font-size: 40px;
+}
+
+.about_weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  font-weight: bold;
+}
+
+.about_weather span:first-child {
+  font-size: var(--font-size-24px);
+}
+
+.about_weather span:nth-child(2) {
+  font-size: var(--font-size-16px);
+}
