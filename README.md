@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Демо
 
-Currently, two official plugins are available:
+Вы можете ознакомиться с работающим приложением по следующей ссылке:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Демо проекта](https://weatherkrg.netlify.app/)
 
-## Expanding the ESLint configuration
+## Описание проекта
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Weather App** — это простое приложение для отображения текущей погоды и прогноза на ближайшие 5 дней. Пользователи могут искать погоду для разных городов и получать актуальные данные о температуре, влажности и других метеорологических показателях. Клиентская часть разработана на **React**, а данные о погоде получаются с помощью API OpenWeatherMap.
 
-- Configure the top-level `parserOptions` property like this:
+## Основные функции
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Поиск погоды:** Пользователь может вводить название города для получения текущей погоды.
+- **Прогноз на 5 дней:** Приложение отображает прогноз погоды на ближайшие 5 дней.
+- **Геолокация:** Приложение может автоматически определять местоположение пользователя для получения данных о погоде.
+- **Координаты:** Есть возможность работы с картой, при клике выводится информация о погоде в данной точке.
+
+## Технологии
+
+- **Frontend:**
+
+  - React
+  - Axios для отправки запросов на сервер
+
+- **API:**
+  - OpenWeatherMap для получения данных о погоде
+
+## Доработки
+
+Планируется улучшить приложение, добавив следующие функции:
+
+- Поиск по названию города (инпут есть, функционала нет)
+- Адаптивный дизайн для различных устройств
+- Доработать карту
+
+## Установка
+
+Для запуска приложения на вашем локальном компьютере:
+
+1. Клонируйте репозиторий:
+
+   ```bash
+   git clone https://github.com/ваш-логин/ваш-репозиторий.git
+
+   ```
+
+2. Перейдите в папку проекта:
+
+```bash
+cd ваш-репозиторий
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Установите зависимости::
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+4. Запустите приложение:
+
+```bash
+npm run dev
+```
+
+После этого приложение будет доступно по адресу http://localhost:5173
